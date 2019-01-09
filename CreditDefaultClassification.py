@@ -42,23 +42,12 @@ from sklearn.model_selection import train_test_split
 from sklearn.feature_selection import RFE
 
 
-# In[2]:
-
-
 ccBASE = pd.read_csv('default of credit card clients.csv')
 ccBASE.info()
-
-
-# In[4]:
-
 
 #import base data
 cc = pd.read_csv('OrdinalValuesDefaultCC.csv', header = 0)
 cc.info()
-
-
-# In[10]:
-
 
 #Import high default probability data set
 #Males, under 40, under 100k credit limit, High School 
@@ -67,55 +56,30 @@ ccHIDEF = pd.read_csv('maels40100khs.csv', header = 0)
 ccHIDEF.info()
 
 
-# In[2]:
-
-
 #Import Male, HS, <100k
 
 ccHIDEF1 = pd.read_csv('MaleHS100k.csv', header = 0)
 ccHIDEF1.info()
-
-
-# In[22]:
-
 
 #import feamale, >300k, >University, Married Data Set
 ccLOWDEF = pd.read_csv('female300kunivmarried.csv', header = 0)
 ccLOWDEF.info()
 
 
-# In[ ]:
-
 
 #Import cc Covariance data, with BILL columns removed
 ccCOVnoBILL = pd.read_csv('ccCOVnoBILL.csv', header = 0)
 ccCOVnoBILL.info()
 
-
-# In[ ]:
-
-
 cc.head()
-
-
-# In[ ]:
-
 
 #Import RFE cc data
 ccRFE = pd.read_csv('RFEordinalccFINAL.csv', header = 0)
 ccRFE.info()
 
-
-# In[ ]:
-
-
 #Import CORR (correlation) data set
 ccCORR = pd.read_csv('CORRordinalccFINAL.csv', header = 0)
 ccCORR.info()
-
-
-# In[ ]:
-
 
 #Import no ASME (age, sex, education, marriage all removed) data set
 ccCConly = pd.read_csv('noASMccDataSet.csv', header = 0)
